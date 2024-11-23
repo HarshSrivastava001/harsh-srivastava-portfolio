@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+    <!-- <script src="https://kit.fontawesome.com/c425e24a8.js" crossorigin="anonymous"></script> -->
+</head>
+<body>  
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/logo.png" alt="Logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#portfolio">Porfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Full Stack Dot Net Developer</p>
+                <h1>Hi, I'm <span>Harsh</span><br>Srivastava</h1>
+            </div>
+        </div>
+    </div>
+<!----------about------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/About.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p style="font-family:'Poppins',sans-serif;text-align: justify;line-height: 20px;margin-top: 10px;">
+                        As a dedicated and passionate Software Engineer with a Diploma in Computer Science, 
+                        I have honed my skills in developing dynamic and efficient web applications using modern technologies. 
+                        My expertise lies in .NET MVC, .Net Core, C#, and SQL operations, complemented by a solid foundation in HTML, CSS, JavaScript, Bootstrap, MSSQL, AJAX , ASP.NET, and jQuery.
+                        Throughout my academic journey and hands-on experience in various projects and internships, I've developed a keen interest in web development. 
+                        I thrive on the challenges of creating user-friendly, responsive, and robust applications that meet client needs and enhance user experience. 
+                        My collaborative nature allows me to work effectively in team environments, where I can contribute my skills and continue learning from others.
+                        I am constantly seeking opportunities to expand my knowledge and stay current with the latest advancements in web technologies. 
+                        My goal is to leverage my technical skills and enthusiasm for innovation to contribute to impactful projects and drive success in the software engineering field.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')"><b>Skills</b></p>
+                        <p class="tab-links" onclick="opentab('experience')"><b>Experience</b></p>
+                        <p class="tab-links" onclick="opentab('education')"><b>Education</b></p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span><b>UI/UX</b></span><br>Designing Web/App interfaces - HTML, CSS, Javascript, Bootstrap, Jquary, Canva</li>
+                            <li><span><b>Web Development</b></span><br>Web app Development - Dot Net MVC, Dot Net Core, C#, MSSQL, AJAX, API</li>
+                            <li><span><b>FullStack</b></span><br>Dot Net Developer</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span><b>02Aug 2024 - Current</b></span><br>Wellborn Digital Lucknow</li>
+                            <li><span><b>27Feb 2024 - 30July 2024</b></span><br>Dot Net Developer at YewTeck surat</li>
+                            <li><span><b>15Sep 2023 - 22Feb 2024</b></span><br>Internship at Techpile Technology.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span><b>2023</b></span><br>Diploma in Computer Science from Firoze Gandhi</li>
+                            <li><span><b>2020</b></span><br>Intermediate from Citizen Public School</li>
+                            <li><span><b>2018</b></span><br>HighSchool from Citizen Public School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------services-->
+    <div id="service">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Development</h2> 
+                    <p>
+                        As a .NET Developer, I build dynamic web applications with .NET MVC and .NET Core, designing front-ends with HTML, CSS, Bootstrap and JavaScript, 
+                        and developing back-ends using C#, MSSQL, and APIs. 
+                        My focus is on creating scalable, secure, and efficient web solutions.
+                    </p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>As a Full Stack Developer, I design responsive front-ends with HTML, CSS, Bootstrap and JavaScript, 
+                        and build efficient back-ends using C# and MSSQL, delivering seamless, user-friendly web solutions.</p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>App Development</h2>
+                    <p>I offer app development services, creating functional and user-friendly applications that meet client needs. 
+                        While I don't specialize in Android development, I ensure high-quality, 
+                        cross-platform solutions that enhance user experience and engagement.</p>
+                        <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----portfolio------>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/work-1.png" alt="">
+                    <div class="layer">
+                         <h3>Social Media Web App</h3>
+                         <p>
+                            Sandeep Bansal Vyapar Mandal is committed to empowering the business community through innovative solutions and collective growth. 
+                            We specialize in fostering collaboration, providing essential resources, and supporting entrepreneurs in achieving their goals.
+                             Our dedicated efforts ensure a thriving and inclusive business environment that nurtures success for all members.
+                         </p>
+                         <a href="http://sandeepbansal.co.in/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Mediacal Web App</h3>
+                        <p>
+                           Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Exercitationem quo consectetur dolor ipsum maiores ipsam cupiditate, aut minima voluptatem tenetur facere quasi sapiente perspiciatis
+                            minus quae delectus adipisci ipsa voluptatum.
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                   </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work-3.png" alt="">
+                    <div class="layer">
+                         <h3>Online Shopping Web App</h3>
+                         <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                             Exercitationem quo consectetur dolor ipsum maiores ipsam cupiditate, aut minima voluptatem tenetur facere quasi sapiente perspiciatis
+                             minus quae delectus adipisci ipsa voluptatum.
+                         </p>
+                         <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+<!-------------------contact------------------>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>hsrivastava544@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>+91 7007917706</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/harsh-srivastava7/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/harsh_srivastava1018/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/HarshSrivastava001"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                </div>
+                <a href="Images/HARSH SRIVASTAVA.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" placeholder="Your Message" rows="6"></textarea>
+                    <button type="submit" class="btn btn2">Submt</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy; 2024 Harsh. Developed <i class="fas fa-heart"></i> By Harsh Srivastava </p>
+    </div>
+
+    <!------------scroll arrow button----------->
+    <a href="#" id="scrollBtn" class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    
+</div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");  
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");  
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+            function openmenu() {
+                sidemenu.style.right = "0";
+            }
+
+            function closemenu() {
+                sidemenu.style.right = "-200px";
+            }  
+            
+            
+            // Get the button
+            var scrollBtn = document.getElementById("scrollBtn");
+
+            // Show the button when the user scrolls down 100px from the top of the document
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                    scrollBtn.style.display = "block";
+                } else {
+                    scrollBtn.style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            scrollBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.scrollTo({top: 0, behavior: 'smooth'});
+            });
+
+    </script> 
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx8KuqhifiCa7S8RX-j2SddhPXNKBrPRqUELae_rkAUO-kwaPFeRmOdNE_xBnMafvE/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },4000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+</body>
+</html>
